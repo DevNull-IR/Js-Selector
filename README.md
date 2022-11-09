@@ -2,6 +2,11 @@
 
 Select is beautiful :))
 
+
+Version: `1.1`
+
+Fixed all bugs
+
 ## use:
 
 ```html
@@ -79,3 +84,51 @@ add Css Code in Element('s) Selected:
 let Selector = new JsSelector(".my_classes");
 Selector.setStyle("color: red", "background-color: #fff", "font-size: 12px");
 ```
+
+## Click
+Click:
+```js
+
+let Selector = new JsSelector(".my_classes");
+
+
+Selector.Onclick(function (){
+    console.log("This test");
+});
+```
+
+Click and get events:
+
+```js
+
+let Selector = new JsSelector(".my_classes");
+
+
+Selector.Onclick(function (){
+    console.log(Selector.event);
+});
+```
+
+Click and get Attribute:
+
+```js
+
+let Selector = new JsSelector(".my_classes");
+
+
+Selector.Onclick(function (){
+    console.log(Selector.Attributes);
+}, "Attributes1", "Attributes2");
+```
+
+
+### setAttributes
+
+```js
+
+let Selector = new JsSelector(".my_classes");
+
+
+Selector.setAttribute("name", "value");
+```
+

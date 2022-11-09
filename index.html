@@ -7,42 +7,41 @@
 </head>
 <body>
 
-<div class="id" id=" ds id sd fds sd21">as</div>
-<div class="id">bc</div>
-<div class="id" id="as this_idsdssd sd this_id">dg</div>
+<div class="id" Selector="asd" id=" ds id sd fds sd21">as</div>
+<div class="id" Selector="سیب" >bc</div>
+<div Selector="asسیبd" class="id" id="as this_idsdssd sd this_id">dg</div>
 <a href="/This test">asdasd</a>
 <a href="http://127.0.0.1:8001/This a test">aasdsdasd</a>
 <a href="http://127.0.0.1:7000/This a test">aasdsdasd</a>
 <div class="isd">dg</div>
-<script src="/JsSelector.js"></script>
+<!--<script src="setting.js"></script>-->
+<script src="JsSelector.js"></script>
 
 <script>
-    let a = new JsSelector(".id");
-    console.log(document.onclick, "s")
-    document.onclick = () => {
-        console.log(document)
-    };
-    a.addEventListener("click", function (){
-        alert("a");
-    });
-    a.Loop(function (){
-       //
-    })
+    let a = new JsSelector("[Selector]");
+
+    a.Onclick(function (){
+        console.log("dfg ", a.event, "dfg ", a.Attributes);
+    }, "selector", "class");
+    // a.Loop(function (){
+    //    //
+    // })
     // a.addEventListener("click", function (){
     //     alert("a");
     // }); // Set events for all class
-    a.RemoveId("id")
-    console.log(a.AddId("asd as", 2));
-    console.log(a.AddId("asd as", 2));
-    console.log(a.AddId("asd sdas", 2));
-    console.log(a.ToggleId("this_id", 2));
+    // a.RemoveId("id")
+    // console.log(a.AddId("asd as", 2));
+    // console.log(a.AddId("asd as", 2));
+    // console.log(a.AddId("asd sdas", 2));
+    // console.log(a.ToggleId("this_id", 2));
 
     a.setStyle("color: red",
         "background: blue",
         "display:block")
 
 
-    new JsSelector(".isd").AddClass("id");
+
+    // new JsSelector(".isd").AddClass("id");
 </script>
 </body>
 </html>
